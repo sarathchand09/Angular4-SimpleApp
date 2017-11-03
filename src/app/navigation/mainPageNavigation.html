@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar nav bg-dark">
+  <h4 class="navbar-text" style="color: aliceblue;">Product Overview</h4>
+</nav>
+
+<div class="row">
+
+  <div class="col-md-3">
+    <ul class="list-unstyled bg-dark ul-decorate">
+
+      <a routerLink="[{outlets:{navPage:['customers']}]">
+        <li class="list-group-item list-group-item-dark li-hover">
+          Customers
+        </li>
+      </a>
+      <a routerLink="/products">
+        <li class="list-group-item list-group-item-dark li-hover">Products</li>
+      </a>
+      <a routerLink="/collections">
+        <li class="list-group-item list-group-item-dark li-hover">Collections</li>
+      </a>
+    </ul>
+  </div>
+
+
+  <div class="col-md-8">
+    <br/>
+    <router-outlet name="navPage"></router-outlet>
+  </div>
+
+</div>
+
+
+
